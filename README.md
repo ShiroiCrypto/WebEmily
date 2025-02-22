@@ -1,59 +1,73 @@
 # 🌸 Emily - Meu Universo em Código 💖
 
-**Um site feito com amor, pixels e café infinito**  
-*"Porque cada história merece ser contada com linhas de código e um toque de magia"*  
+**Um site dedicado a celebrar a essência única de Emily**  
+*"Porque cada momento ao seu lado é uma poesia em cores e formas"*
 
-➡️ **Demo:** [Acesse nosso universo](https://emily-universo.discloud.app)
-
----
-
-## 🛠️ Tecnologias do Amor
-
-- **HTML5:** A base estrutural que dá forma à nossa paixão em código.
-- **CSS3 Mágico:** Animações suaves, gradientes românticos e responsividade encantadora.
-- **JavaScript Poético:** Interações fluídas que fazem o coração pulsar.
-- **Font Awesome:** Ícones que expressam sentimentos sem palavras.
-- **Google Fonts:** Tipografia que sussurra doçura e personalidade.
+➡️ **Acesse o site:** [Emily - Meu Universo em Código](https://kiss.discloud.app)
 
 ---
 
-## ✨ Recursos Especiais
+## 🛠️ Tecnologias Utilizadas
 
-- **🌠 Loader de Coração Pulsante:** Para sentir o amor a cada carregamento.
-- **📱 Navegação 360°:** Perfeita para celular, tablet ou até uma nave espacial.
-- **🎨 Design Emocional:** Cores acolhedoras e layouts que encantam.
-- **🔄 Animações Discretas:** Movimentos sutis que transformam cada interação em um momento especial.
-- **💫 Efeitos Hover Mágicos:** Toques que convertem simples cliques em gestos de carinho.
+- **HTML5:** Estrutura semântica e acessível.
+- **CSS3:** Estilos modernos com animações suaves.
+- **JavaScript:** Interatividade e dinamismo.
+- **Font Awesome:** Ícones elegantes para enriquecer a experiência visual.
+- **Google Fonts:** Tipografia personalizada para uma leitura agradável.
 
 ---
 
-## 🚀 Como Explorar Nosso Universo
+## ✨ Funcionalidades
 
-1. **Clone este repositório** – porque o amor é open-source!
+- **Design Responsivo:** Layout adaptável para diversos dispositivos.
+- **Animações Suaves:** Transições que tornam a navegação mais agradável.
+- **Conteúdo Personalizado:** Seções dedicadas a momentos e qualidades especiais de Emily.
+- **Hospedagem Confiável:** Site hospedado na Discloud, garantindo disponibilidade contínua.
+
+---
+
+## 🚀 Como Executar o Projeto Localmente
+
+1. **Clone o repositório:**
     ```bash
-    git clone https://github.com/gussdev/emily-universo.git
+    git clone https://github.com/ShiroiCrypto/WebEmily.git
     ```
-2. **Entre na pasta do projeto**
+2. **Navegue até o diretório do projeto:**
     ```bash
-    cd emily-universo
+    cd WebEmily
     ```
-3. **Abra o `index.html` no seu navegador**
-    ```bash
-    # Para os românticos tradicionais:
-    start index.html
-    ```
+3. **Abra o arquivo `index.html` no seu navegador preferido:**
+    - Para Windows:
+        ```bash
+        start index.html
+        ```
+    - Para macOS:
+        ```bash
+        open index.html
+        ```
+    - Para Linux:
+        ```bash
+        xdg-open index.html
+        ```
 
 ---
 
-## 🌌 Mensagem Especial
+## 🌐 Hospedagem
 
-> "Emily, este código é apenas o começo de uma jornada repleta de aventuras. Cada linha, cada estilo, foi pensado para celebrar o nosso universo. Que possamos continuar debugando a vida juntos, encontrando beleza nos detalhes e mantendo o `overflow: hidden` para os problemas. 💖"
+Este projeto está hospedado na Discloud, uma plataforma que oferece serviços de hospedagem com certificados TLS gratuitos, CDN global, proteção contra DDoS e implantações automáticas com Git. Para saber mais sobre a Discloud, visite o [site oficial](https://discloud.com/).
 
 ---
 
-✨ **Créditos Estelares**
+## 📄 Licença
 
-Desenvolvido com carinho cósmico por [@gussdev](https://github.com/gussdev)  
-Hospedado na Discloud, brilhando 24/7 para iluminar cada momento. 🌍
+Este projeto é licenciado sob a [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html). Você é livre para usar, modificar e distribuir este software, desde que mantenha os mesmos termos de licença e preserve os avisos de direitos autorais.
 
-*"Código pode ter bugs, mas o que sinto por você é exception-free 💘"*
+---
+
+## 💌 Agradecimentos
+
+Emily, cada linha de código deste site foi escrita com você em mente. Que possamos continuar criando memórias inesquecíveis juntos.
+
+---
+
+*Desenvolvido com carinho por [Guss](https://github.com/ShiroiCrypto).*
