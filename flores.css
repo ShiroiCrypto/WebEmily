@@ -1,0 +1,141 @@
+:root {
+    --primary-color: #ff85a2;
+    --secondary-color: #ffacc7;
+    --stem-color: #7ebd7e;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(180deg, #87CEEB 0%, #FFB6C1 100%);
+}
+
+.flower-garden {
+    position: relative;
+    height: 100vh;
+}
+
+.flower {
+    position: absolute;
+    bottom: 0;
+    animation: sway 4s ease-in-out infinite;
+}
+
+.petals {
+    width: 60px;
+    height: 60px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    animation: bloom 2s ease-out;
+}
+
+@keyframes sway {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+}
+
+@keyframes bloom {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
+.center {
+    width: 20px;
+    height: 20px;
+    background: #FFD700;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+.stem {
+    width: 8px;
+    height: 250px;
+    background: var(--stem-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.leaf {
+    width: 40px;
+    height: 30px;
+    background: var(--stem-color);
+    position: absolute;
+    border-radius: 50% 0;
+    transform: rotate(-45deg);
+    left: -10px;
+    top: 100px;
+    animation: leafFloat 3s ease-in-out infinite;
+}
+
+@keyframes leafFloat {
+    0%, 100% { transform: rotate(-45deg) translateY(0); }
+    50% { transform: rotate(-45deg) translateY(-10px); }
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+}
+
+.enter-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    transition: transform 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.enter-button:hover {
+    transform: translateY(-3px);
+    background: var(--secondary-color);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .flower {
+        animation: swayMobile 5s ease-in-out infinite;
+    }
+
+    @keyframes swayMobile {
+        0%, 100% { transform: rotate(-8deg); }
+        50% { transform: rotate(8deg); }
+    }
+    .floating-petal {
+        width: 15px;
+        height: 15px;
+        background: #ff85a2;
+        position: absolute;
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        animation: float 5s linear infinite;
+        opacity: 0.7;
+    }
+    
+    @keyframes float {
+        0% {
+            transform: translateY(100vh) rotate(0deg);
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.7;
+        }
+        100% {
+            transform: translateY(-100vh) rotate(360deg);
+            opacity: 0;
+        }
+    }
+}
