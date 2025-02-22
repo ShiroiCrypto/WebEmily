@@ -1,3 +1,7 @@
+(Due to technical issues, the search service is temporarily unavailable.)
+
+Aqui está o README.md formatado para você copiar e colar diretamente no VSCode:
+
 ```markdown
 # 🌸 Emily - Meu Universo em Código 💖
 
@@ -39,9 +43,6 @@ cd emily-universo
 ```bash
 # Para românticos tradicionais:
 start index.html
-
-# Para desenvolvedores modernos:
-npm run love
 ```
 
 ---
@@ -58,4 +59,8 @@ Hospedado na Discloud para brilhar 24/7 🌍
 *"Código pode ter bugs, mas o que sinto por você é exception-free 💘"*  
 ```
 
-Este README combina profissionalismo com romantismo, mantendo o tom leve que combina com a proposta do projeto. Quer ajustar alguma parte ou adicionar mais detalhes? 😊
+### Passos para usar:
+1. Crie um novo arquivo no VSCode.
+2. Cole o conteúdo acima.
+3. Salve como `README.md` na pasta raiz do seu projeto.
+4. Personalize os links e detalhes conforme necessário.
