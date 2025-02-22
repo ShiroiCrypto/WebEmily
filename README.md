@@ -1,5 +1,3 @@
-(Due to technical issues, the search service is temporarily unavailable.)
-
 ```markdown
 # 🌸 Emily - Meu Universo em Código 💖
 
