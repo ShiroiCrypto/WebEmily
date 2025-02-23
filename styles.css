@@ -244,6 +244,24 @@ footer {
     cursor: pointer;
 }
 
+/* Adicione no CSS */
+audio {
+    display: none; /* Esconde o elemento audio nativo */
+}
+
+.music-controls {
+    /* Mantenha o existente e adicione: */
+    opacity: 0;
+    animation: fadeInControls 1s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes fadeInControls {
+    to {
+        opacity: 1;
+    }
+}
+
 @media (max-width: 768px) {
     .animated-title {
         font-size: 2rem;
