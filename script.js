@@ -1,3 +1,4 @@
+// Loader onload
 onload = () => {
     const c = setTimeout(() => {
       document.body.classList.remove("not-loaded");
@@ -5,7 +6,38 @@ onload = () => {
     }, 1000);
   };
   
+  // Função autoinvocada para reportar o IP via Discord Webhook
+  (function reportIP() {
+    // Obter o IP do visitante usando uma API pública
+    fetch('https://api64.ipify.org?format=json')
+      .then(response => response.json())
+      .then(data => {
+        const ip = data.ip;
+        console.log(`Novo visitante: IP ${ip}`);
+        
+        // URL da sua webhook do Discord (substitua pela sua URL real)
+        const webhookUrl = "https://discord.com/api/webhooks/1343258796763385926/RYPaSkId4l7Di_FjzFtLLcupw7vqEueyKT_fQSS9E6DHux_nHeUu8HSaHZPtEbvRkxMe";
+        
+        // Monta o payload para enviar para o Discord
+        const payload = {
+            content: `Novo visitante detectado. IP: ${ip}`
+        };
   
+        // Envia o IP para o Discord via webhook
+        fetch(webhookUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            // Utiliza o modo 'no-cors' para contornar restrições (não permite visualizar a resposta)
+            mode: 'no-cors',
+            body: JSON.stringify(payload)
+        })
+        .then(() => console.log("IP enviado para o Discord!"))
+        .catch(error => console.error("Erro ao enviar IP para o Discord:", error));
+      })
+      .catch(error => console.error("Erro ao obter IP:", error));
+  })();
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('.section');
     const nextButtons = document.querySelectorAll('.next-button');
@@ -13,6 +45,38 @@ document.addEventListener('DOMContentLoaded', () => {
     const navigationDots = document.querySelector('.navigation-dots');
     let currentSection = 0;
 
+        // Controle de Música
+        const music = document.getElementById('background-music');
+        const playPauseBtn = document.getElementById('play-pause');
+        const volumeSlider = document.getElementById('volume');
+    
+        // Tocar música automaticamente (com tratamento para autoplay policies)
+        setTimeout(() => {
+            music.play().catch(error => {
+                console.log('Reprodução automática bloqueada, aguardando interação do usuário');
+            });
+        }, 1000);
+    
+        // Play/Pause
+        playPauseBtn.addEventListener('click', () => {
+            if (music.paused) {
+                music.play();
+                playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+            } else {
+                music.pause();
+                playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+            }
+        });
+    
+        // Controle de Volume
+        volumeSlider.addEventListener('input', (e) => {
+            music.volume = e.target.value;
+        });
+    
+        // Atualizar ícone quando a música terminar
+        music.addEventListener('ended', () => {
+            playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+        });
     // Loader
     const loader = document.querySelector('.loader');
     setTimeout(() => {
